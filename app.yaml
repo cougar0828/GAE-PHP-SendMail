@@ -1,0 +1,15 @@
+application: ethereal-cache-523
+version: sendmail
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /
+  script: sendMail.php
+
+- url: /handle_sendmail.php
+  script: handle_sendmail.php
+
+- url: /stylesheets
+  static_dir: stylesheets 
+
